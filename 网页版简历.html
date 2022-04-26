@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DD的个人简历</title>
+</head>
+<script>
+    function apply(){
+        var odianhua = document.getElementById("dianhua");
+        var haoma = odianhua.value;
+        if(isNaN(haoma)&haoma!=0){
+            var i=0;
+        }else{
+            var i=1;
+        }
+        if(i&&(haoma.length==11)){
+            alert("很高兴认识你，这是我的邮箱：damowangD@aliyun.com"); 
+        }
+        else{
+            alert("很抱歉，您输入的不是11位的号码。"); 
+        }
+    }
+
+    function showTime(){
+        nowtime=new Date();
+        year=nowtime.getFullYear();
+        month=nowtime.getMonth()+1;
+        date=nowtime.getDate();
+        document.getElementById("mytime").innerText=year+"年"+month+"月"+date+" "+nowtime.toLocaleTimeString();
+    }
+    
+    setInterval("showTime()",1000);
+    
+  </script>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:1170px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+#footer {
+    position: relative;
+    top: -130px;
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+.city {
+float: left;
+margin: 5px;
+padding: 15px;
+width: 660px;
+height: 230px;
+border: 1px solid black;
+} 
+.city1 {
+float: left;
+margin: 5px;
+padding: 15px;
+width: 200px;
+height: 350px;
+border: 1px solid black;
+} 
+.city2 {
+float: left;
+margin: 5px;
+padding: 15px;
+width: 1000px;
+height: 210px;
+border: 1px solid black;
+} 
+.city3 {
+float: left;
+margin: 5px;
+padding: 15px;
+width: 300px;
+height: 230px;
+border: 1px solid black;
+} 
+.city4 {
+position: relative;
+top: -130px;
+float: left;
+margin: 5px;
+padding: 15px;
+width: 1245px;
+height: 450px;
+border: 1px solid black;
+} 
+.city5 {
+float: left;
+margin: 5px 30px 5px 30px;;
+padding: 15px;
+width: 300px;
+height: 300px;
+display: table-cell; 
+vertical-align: middle;
+text-align: center;
+border: 1px solid black;
+} 
+.city6 {
+position: relative;
+top: -130px;
+float: left;
+margin: 5px;
+padding: 15px;
+width: 1245px;
+height: 110px;
+border: 1px solid black;
+display: table-cell; 
+vertical-align: middle;
+text-align: center;
+} 
+.city7 {
+float:left;
+position: relative;
+top: -130px;
+margin: 5px;
+padding: 15px;
+width: 200px;
+height: 90px;
+border: 1px solid black;
+} 
+a:hover
+{ 
+background-color:rgba(4, 0, 255, 0.281);
+}
+.city5:hover {
+            box-shadow: 0 0 20px 0 gray;
+            transform: translateY(-2px);
+        }
+</style>
+
+<body>
+
+<div id="header">
+<h1>个人简历</h1>
+</div>
+
+<div id="nav">
+    <dl>
+        <h3><a href="#A1">基本信息</a><br></h3>
+        <h3><a href="#A2">教育经历</a><br></h3>
+        <h3><a href="#A3">技能概述</a><br></h3>
+        <h3><a href="#A4">作品展示</a><br></h3>
+    </dl>
+</div>
+    <div class="city1">
+        <h2><a name="A1">基本信息</a></h2>
+        <h4>姓名：</h4>陈頔
+        <h4>院系：</h4>地理科学学院
+        </div>
+        
+        <div class="city2">
+            <h2>欢迎您观看我的WEB简历</h2>
+            <p>你可以通过点击页面左侧的目录抵达你感兴趣的内容，</p>
+            <p>如果你对我本人有一定的兴趣，</p>
+            <p>可以在页面最后的输入栏中输入你的联系方式来交换我的联系方式。</p>
+        </div>
+
+        <br>
+        
+        <div class="city3">
+        <h2><a name="A2">教育经历</a><br></h2>
+        <h4>2017.9-2021.6  南京师范大学本科</h4>
+        <h5>地理科学学院 自然地理与资源环境</h5>
+        <h4>2021.9-至今   南京师范大学硕</h4>
+        <h5>地理科学学院 自然地理</h5>
+        </div>
+        <div class="city">
+            <h2><a name="A3">技能概述</a></h2>
+            <p>C语言2级</p>
+            <p>熟练掌握photoshop的应用，具有基本的设计基础</p>
+            <p>能够完成简单的C4D模型制作，并制作简单的动画</p>
+            <p>熟练掌握Pr剪辑</p>
+        </div>
+        <div class="city7">
+            <h2>时间显示</h2>
+            <span id="mytime"></span>
+        </div>
+        <div class="city4">
+        </p><h2><a name="A4">作品展示</a></h2>
+            <div class="city5">
+                <img src="images/001.jpg" width="250px" height="250px" alt="">
+                <h5 style="text-align:center">利用PS和Mugeda制作的微信邀请函（扫描二维码可以观看）</h5>
+            </div>
+            <div class="city5">
+                <img src="images/002.PNG" width="250px" height="250px" alt="">
+                <h5 style="text-align:center">个人拍摄作品并通过PS修改</h5>
+            </div>
+            <div class="city5">
+                <img src="images/003.jpg" width="250px" height="250px" alt="">
+                <h5 style="text-align:center">利用Pr自主拍摄并剪辑的VLOG</h5>
+            </div>
+        </div>
+        <div class="city6">
+            <form>
+                <h3 style="text-align:center">如果您对我感兴趣可以留下您的电话号码</h3>
+                电话号码：<input type="text" placeholder="请输入号码" id="dianhua"> <br/>
+                <button onclick= 'apply()'>提交号码</button>
+                <input type="reset" value="重新填写">
+            </form>
+        </div>
+
+<div id="footer">
+陈頔
+</div>
+
+</body>
+</html>
